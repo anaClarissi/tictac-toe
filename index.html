@@ -17,7 +17,25 @@
 
     <main>
 
-        <h1>Tic Tac Toe</h1>
+        <div class="players">
+
+            <div class="player-data one">
+
+                <h2 class="player-name one">Player Name</h2>
+
+                <p class="player-symbol one">X</p>
+
+            </div>
+
+            <div class="player-data two">
+
+                <h2 class="player-name two">Player Name</h2>
+
+                <p class="player-symbol two">O</p>
+
+            </div>
+
+        </div>
 
         <div class="board">
 
@@ -34,6 +52,48 @@
         </div>
         
     </main>
+
+    <div class="start-menu">
+
+        <form>
+
+            <label for="player-one">Enter the player name:</label>
+            <input type="text" name="player-one" id="player-one" placeholder="Ex. Maria" required>
+
+
+            <label for="player-two">Enter the player name:</label>
+            <input type="text" name="player-two" id="player-two" placeholder="Ex. Kevin" required>
+
+            <label for="player-one-symbol">Player One Symbol:</label>
+            <select name="player-one-symbol" id="player-one-symbol" required>
+
+                <option value="X" selected>X</option>
+                <option value="O">O</option>
+
+            </select>
+
+            <button type="submit" class="btn-start">Start</button>
+
+        </form>
+
+    </div>
+
+    <div class="end-menu">
+
+        <h2 class="winner-name">Winner Name</h2>
+
+        <p class="winner-symbol">Winner Symbol</p>
+
+        <div class="end-menu--actions">
+
+            <button class="btn-continue">Continue</button>
+
+            <button class="btn-restart">Restart</button>
+        
+        </div>
+
+    </div>
+
     <!-- TIC TAC TOE JS -->
     <script src="src/js/tic-tac-toe.js"></script>
 
